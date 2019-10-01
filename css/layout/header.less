@@ -5,10 +5,18 @@ header {
   height: 90px;
   width: 100%;
   position: absolute;
+
+  @media (max-width: @mobile) {
+    height: auto;
+  }
 }
 
 header .container {
   position: relative;
+
+  @media (max-width: @mobile) {
+    position: static;
+  }
 }
 
 .menu-principal {
@@ -24,6 +32,10 @@ header .container {
     li {
       display: inline-block;
       width: 5em;
+
+      @media (max-width: @mobile) {
+        margin:  .4em;
+      }
     }
 
     a {
